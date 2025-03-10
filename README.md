@@ -46,11 +46,13 @@ chmod +x deploy.sh
 5. Comprobamos los certificados de https.
 
 6. Verificamos que arranca.
+  
 ![](images/2.png)
 
 ![](images/1.png)
 
 7. Instalamos y ejecutamos PM2
+  
 ![](images/3.png)
 
 ![](images/4.png)
