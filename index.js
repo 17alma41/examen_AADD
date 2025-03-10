@@ -11,8 +11,6 @@ const app = express();
 app.use(express.json());
 app.use(express.static('public'));
 
-const APIKEY = "123456";
-
 app.use(cors()); // Se puede añadir a todas las rutas
 
 // CORS middleware

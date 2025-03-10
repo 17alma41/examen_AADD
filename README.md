@@ -51,7 +51,15 @@ chmod +x deploy.sh
 ![](images/1.png)
 
 7. Instalamos y ejecutamos PM2
-Seguir comentando
+![](images/3.png)
+
+![](images/4.png)
+
+## CORS
+Hemos añadido CORS a todo los endpoints de la web:
+```js
+app.use(cors()); // Se puede añadir a todas las rutas
+```
 
 ## Deploy CI/CD
 1. Crear un repositorio en GitHub
