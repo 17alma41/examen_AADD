@@ -29,7 +29,7 @@ sudo certbot certonly --standalone -d $DOMAIN --non-interactive --agree-tos -m $
 mkdir -p "$MESSAGE_DIR"
 
 # Copiar certificados al directorio del proyecto
-echo "📂 Moviendo certificados..."
+echo "📂 Moviendo certificados..." # Arreglar para que los mueva
 sudo cp "$CERT_DIR/privkey.pem" "$MESSAGE_DIR/"
 sudo cp "$CERT_DIR/fullchain.pem" "$MESSAGE_DIR/"
 
