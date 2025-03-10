@@ -33,6 +33,11 @@ echo "📂 Moviendo certificados..." # Arreglar para que los mueva
 sudo cp "$CERT_DIR/privkey.pem" "$MESSAGE_DIR/"
 sudo cp "$CERT_DIR/fullchain.pem" "$MESSAGE_DIR/"
 
+# Copiar certificados al directorio del proyecto
+echo "📂 Moviendo certificados de la carpeta de message..." 
+sudo cp "$MESSAGE_DIR/privkey.pem" "$PROJECT_DIR/"
+sudo cp "$MESSAGE_DIR/fullchain.pem" "$PROJECT_DIR/"
+
 # Asegurar permisos adecuados
 sudo chown -R $USER:$USER "$MESSAGE_DIR"
 sudo chmod 600 "$MESSAGE_DIR/privkey.pem" "$MESSAGE_DIR/fullchain.pem"
